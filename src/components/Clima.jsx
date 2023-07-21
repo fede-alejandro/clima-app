@@ -45,33 +45,6 @@ function Clima() {
             <div className='temp_min_max'>
                 <div>
                     <span className='material-symbols-outlined'>
-                        air
-                    </span>
-                    <p>{wind.speed}<span>m/s</span></p>
-                </div>
-
-                <div className=''>
-                    <span className='material-symbols-outlined'>
-                        humidity_percentage
-                    </span>
-                    <p>{main.humidity}</p>
-                </div>
-                {/* </div>
-            <div className='temp_min_max'> */}
-                <div>
-                    <span className='material-symbols-outlined'>
-                        wb_twilight
-                    </span>
-                    <p>{horaSunset(sys)}</p>
-                </div>
-                <div>
-                    <span className='material-symbols-outlined'>
-                        clear_day
-                    </span>
-                    <p>{horaSunrise(sys)}</p>
-                </div>
-                <div>
-                    <span className='material-symbols-outlined'>
                         thermometer_loss
                     </span>
                     <p>Min:{parseInt(main.temp_min - kelvin)}
@@ -85,6 +58,34 @@ function Clima() {
                     <p>Max:{parseInt(main.temp_max - kelvin)}
                         <span>°</span>
                     </p>
+                </div>
+
+            </div>
+            <div className='temp_min_max'>
+                <div className=''>
+                    <span className='material-symbols-outlined'>
+                        humidity_percentage
+                    </span>
+                    <p>{main.humidity}</p>
+                </div>
+                <div>
+                    <span className='material-symbols-outlined'>
+                        air
+                    </span>
+                    <p>{wind.speed}<span>m/s</span></p>
+                </div>
+                <div>
+                    <span className='material-symbols-outlined'>
+                        clear_day
+                    </span>
+                    <p>{horaSunrise(sys)}</p>
+                </div>
+
+                <div>
+                    <span className='material-symbols-outlined'>
+                        wb_twilight
+                    </span>
+                    <p>{horaSunset(sys)}</p>
                 </div>
             </div>
         </div>
